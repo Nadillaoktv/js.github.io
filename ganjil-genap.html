@@ -103,9 +103,17 @@
 
         if(bilangan > 0){
             console.log("Negatif")
-        } else if(bilangan > 0){
+        }
+         else {
             console.log("Positif")
         }
+        if (bilangan % 2 == 0){
+            console.log("genap")
+        }
+        else {
+            console.log("ganjil")
+        }
+
 
         // penjumlahan 2 angka
 
@@ -148,6 +156,55 @@
         let hsIl = km * 1000;
 
         console.log(hsIl)
+
+        // harga barang
+
+        let harga1 = 200000;
+        let harga2 = 90000;
+        let harga3 = 95000;
+        let total = harga1 + harga2 + harga3;
+        let diskon = total * 10 / 100;
+
+        if(total > 100000){
+            harga = total - diskon;
+        }
+        else {
+            harga = total
+        }
+        console.log(harga)
+
+        // lembur kerja
+
+        let jaM = 8;
+
+        if(jaM < 6){
+            console.log("100000")
+        } else if(jaM == 6){
+            console.log("200000")
+        } else if(jaM > 6){
+            console.log("300000")
+        }
+
+        // air
+
+        let tinggiair = 650.0;
+
+        if(tinggiair <= 500.0){
+            console.log("Aman")
+        }
+        else if(tinggiair <= 600.0){
+            console.log("WASPADA")
+        }
+        else if(tinggiair <= 650.0){
+            console.log("SIAGA 2")
+        } 
+        else if(tinggiair <= 650){
+            console.log("SIAGA 1")
+        }
+
+        
+
+        
 
 
 
