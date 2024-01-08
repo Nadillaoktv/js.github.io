@@ -202,6 +202,59 @@
             console.log("SIAGA 1")
         }
 
+        // tiket
+
+        let vip = 50;
+        let eksekutif = 50;
+        let ekonomi = 50;
+        let untung
+
+
+        if(vip >= 35){
+            untung1 = 25;
+        } else if (vip >= 20 && vip <= 35){
+            untung1 = 15;
+        } else {
+            untung1 = 5;
+        }
+
+        if(eksekutif >= 20){
+            untung2 = 20;
+        } else if (eksekutif >= 20 && vip <= 40){
+            untung2 = 10;
+        } else {
+            untung2 = 2;
+        }
+
+        if(ekonomi >= 0){
+            untung3 = 7;
+        } 
+
+        let kelasvip = vip * untung1;
+        let kelaseksekutif = eksekutif * untung2;
+        let kelasekonomi = ekonomi * untung3;
+
+        let totaluntung = kelasvip + kelaseksekutif + kelasekonomi;
+        let totaltiket = vip + eksekutif + ekonomi;
+
+        console.log(`
+        keuntungan kelas vip ${kelasvip} 
+        keuntungan kelas eksekutif ${kelaseksekutif}
+        keuntungan kelas ekonomi ${kelasekonomi}
+        keuntungan keseluruhan ${totaluntung}
+        jumlah tiket vip ${vip}
+        jumlah tiket eksekutif ${eksekutif}
+        jumlah tiket ekonomi ${ekonomi}
+        total tiket seluruh kelas ${totaltiket}`)
+
+
+
+        
+        
+
+        
+
+
         
 
         
