@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // gaji karyawan
+       const karyawan = "lala";
+        const gaji = 2000000;
+        const tunjangan = 0.20 * gaji;
+        const pajak = 0.15 * (gaji + tunjangan);
+
+        const gaji_bersih = gaji + tunjangan - pajak; 
+
+        console.log (`${karyawan} memiliki gaji ${gaji} dengan tunjangan ${tunjangan} dan pajak ${pajak}`)
+
+
+
+        const jam = 1;
+        const menit = 30;
+        const detik = 40;
+
+        total_detik = jam * 3600 + menit * 60 + detik;
+
+        console.log(total_detik)
+
+
+    
+        const data_total = 5440;
+        const jam1 = 5440 / 3600;
+        const menit1 = Math.floor
+        const detik1 = 36 / 60
+
+        total = jam1 * 3600 + menit1 * 60 + detik1;
+
+        console.log(` nilai jam ${jam1} nilai menit ${menit1} nilai detik ${detik1} `)
+
+    
+
+        let detiktotal = 5440;
+
+        let jAm = Math.floor (detiktotal / 3600);
+        let sisadetik = detiktotal % 3600;
+        let Menit = Math.floor (sisadetik / 60)
+        let deTik = sisadetik % 60;
+
+        console.log (` ${jAm} jam, ${Menit} menit, ${deTik} detik`)
+  
+    </script>
+</body>
+</html>

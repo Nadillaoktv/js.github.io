@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // looping for
+        for(let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        // looping while
+        let a = 1;
+        while (a <= 10) {
+            console.log(a);
+            a++;
+        }
+
+        // looping do while
+        let b = 1;
+        do {
+            console.log(b);
+            b++;
+        } while( b <= 10);
+
+        // looping for
+        for (let t = 1; t <= 50; t++) {
+            if ( t % 2 == 0) {
+                console.log(` ${t} adalah bilangan genap`)
+            } else {
+                console.log(` ${t} adalah bilangan ganjil`)
+            }
+        } 
+
+        // looping while
+        let r = 1;
+        while (r <= 50) {
+            if ( r % 2 == 0) {
+                console.log(` ${r} adalah bilangan genap`)
+            } else {
+                console.log(` ${r} adalah bilangan ganjil`)
+            }
+            r++;
+        }
+
+        // looping do while 
+        let w = 1;
+        do {
+            if ( w % 2 == 0) {
+                console.log(`${w} bilangan genap`)
+            } else {
+                console.log(`${w} bilangan ganjil`)
+            }
+            w++;
+        } while (w <= 50);
+
+        // looping for faktorial dari 5 cara 1
+         let n = 5;
+         let hasil = 1;
+         for(let n = 2; n <= 5; n++) {
+            hasil *= n;
+         }
+         console.log(hasil);
+
+         // looping for faktorial dari 5 cara 2
+
+         let number = 5;
+         let faktorial = 1;
+
+         for(let l = 1; l <=number; l++){
+            faktorial *= l;
+            // *= adalah faktorial = faktorial * l;
+         }
+         console.log(`faktorial dari ${number} adalah ${faktorial}`)
+
+         // looping while faktorial
+         let no = 5;
+         let Hasil = 1;
+         let m = 1;
+
+         while(m <=no){
+            Hasil *= m;
+            m++
+         } console.log(`faktorial dari ${no} adalah ${Hasil}`)
+
+         // looping do while faktorial
+         let faktor = 1;
+         let k = 1
+         let num = 5;
+
+         do {
+            faktor *= k;
+            k++
+         } while(k <= num);
+
+         console.log(`faktorial dari ${num} adalah ${faktor}`);
+
+         
+    </script>
+</body>
+</html>
